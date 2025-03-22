@@ -12,3 +12,5 @@ for i, file in enumerate(tqdm(list(INDOR.glob('*.txt')))):
         
 PATH = Path('data/cleaned_eng.txt')
 PATH.write_text('\n'.join(re))
+PATH = Path('data/cleaned_eng_lower.txt')
+PATH.write_text('\n'.join(re).lower())

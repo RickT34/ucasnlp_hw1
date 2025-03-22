@@ -10,7 +10,7 @@ re = []
 for i, file in tqdm(enumerate(INDOR.glob('*.pkl'))):
     l = pickle.load(open(file, 'rb'))
     f = lambda x:''.join(filter(is_chinese, x))
-    re+=list(map(f, l))
+    re.append(''.join(map(f, l)))
     
 
 PATH = Path('data/cleaned_chs.txt')
