@@ -1,6 +1,6 @@
 # UCAS Natural Language Processing Homework 1
 
-This is the solution of the first homework of 2025 UCAS Natural Language Processing By TR.
+This is the solution of the first homework of 2025 spring UCAS Natural Language Processing By TR.
 
 ## Files
 
@@ -8,7 +8,7 @@ This is the solution of the first homework of 2025 UCAS Natural Language Process
 - `ppnews.py`: Python script to download and parse People's Daily News articles from [PDN](http://paper.people.com.cn/rmrb/pc/layout/202503/19/node_01.htmll).
 - `cleaner_chs.py`: Python script to clean Chinese text.
 - `cleaner_eng.py`: Python script to clean English text.
-- `experiment.py`: Python script to calculate the entropy of a dataset.
+- `experiment.py`: Python script to do experiments.
 - `data_exploer.ipynb`: Jupyter notebook to plot the data.
 
 ## Requirements
@@ -37,9 +37,11 @@ python cleaner_eng.py
 
 4. Calculate the entropy of the dataset.
 
+For example: 
+
 ```bash
-python experiments.py data/cleaned_eng.txt
-python experiments.py data/cleaned_chs.txt
+python experiments.py data/cleaned_eng.txt --method accumulate
+python experiments.py data/cleaned_eng.txt --method piecewise
 ```
 
 5. Plot the data using `data_exploer.ipynb`.
