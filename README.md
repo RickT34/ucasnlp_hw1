@@ -1,6 +1,6 @@
 # UCAS Natural Language Processing Homework 1
 
-This is the solution of the first homework of 2025 UCAS Natural Language Processing.
+This is the solution of the first homework of 2025 UCAS Natural Language Processing By TR.
 
 ## Files
 
@@ -17,30 +17,30 @@ This is the solution of the first homework of 2025 UCAS Natural Language Process
 pip install -r requirements.txt
 ```
 
-## Usage
+## Workflow
 
-Create a `data` directory under the project root directory.
+1. Create a `data` directory under the project root directory.
 
-1. Get the raw text data from arXiv and PDN.
+2. Get the raw text data from arXiv and PDN.
 
 ```bash
 python arxivpapers.py
 python ppnews.py
 ```
 
-2. Clean the text data.
+3. Clean the text data.
 
 ```bash
 python cleaner_chs.py
 python cleaner_eng.py
 ```
 
-3. Calculate the entropy of the dataset.
+4. Calculate the entropy of the dataset.
 
 ```bash
 python experiments.py data/cleaned_eng.txt
 python experiments.py data/cleaned_chs.txt
 ```
 
-4. Plot the data using `data_exploer.ipynb`.
+5. Plot the data using `data_exploer.ipynb`.
 
